@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>1st Infantry Division</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
+body, html {
+  height: 100%;
+  color: #474747;
+  line-height: 1.8;
+  background-color: #c4c4c4
+}
+
+.regiment-padding {
+  padding: 0px 20px 0px 20px;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/1IDLogov5.png');
+  min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url('images/regiments.jpg');
+  min-height: 400px;
+}
+
+/* Discord Logo */
+.discordlogo {
+  width: 30%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1400px) {
+  .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+
+  .bgimg-1 {
+    background-image: url('images/Avatar.png');
+  }
+}
+
+@media only screen and (max-device-width: 700px) {
+  .bgimg-1 {
+    max-height: 50%;
+    min-height: 50%;
+    background-attachment: scroll;
+  }
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar header-color w3-card" id="myNavbar">
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button hover">HOME</a>
+      <a href="roster.html" class="w3-bar-item w3-button hover">ROSTER</a>
+      <a href="calendar.html" class="w3-bar-item w3-button hover">CALENDAR</a>
+      <a href="gallery.html" class="w3-bar-item w3-button hover"></i>GALLERY</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+</div>
+
+
+
+<!-- Container (About Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="video-container">
+    <iframe width="854" height="480"
+        src="https://www.youtube.com/embed/UDnUD73gRXk">
+    </iframe>
+  </div>
+  <h2 class="w3-center"><u>ABOUT US</u></h2>
+  <h4>Welcome to the 1st Infantry Division! We are an international Mil-Sim light with all the tactics, structure, and skill of a mil-sim without the yes sir no sir hassle. Our mission is to be the best of the best while having the most fun along the way. We welcome anyone with a desire to play the game the right way with open arms. We are a mature, and understanding community with no mandatory attendance at training's or events. We run multiple community wide events and operations from 1 life events, death races, competetive matches against other teams, to internal 1ID scrims between Squads or against other units. </h3>
+  <h4>After a new recruit indicates they'd like to join on our Discord server, they will be scheduled for basic training. Basic training ensures all members have a basic understanding of the game and have an idea of what to expect when operating in 1ID. This training takes about 15 to 20 minutes. Afterwards recruits will be promoted and be considered a member of 1ID.</h4>
+  <br >
+  <div class="w3-center" >
+    <a href="https://discord.gg/mNfRdMBsmS"><img src="images/1IDJoinlogo.png" style="width:20%; border-radius:10%"></a>
+  </div>
+  
+  <p class="w3-center w3-large">If you're interested in joining or want to come hang out, <a href="https://discord.gg/Pan4yK959F">click here</a> or the logo above!</p>
+  <p class="w3-center w3-large">If you want to support us, consider becoming a <a href="https://www.patreon.com/1ID/posts">Patreon</a> member or donating to our <a href="https://www.paypal.com/pools/c/8wQQHzXwod">PayPal</a>. </p>
+  
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-wide"><b>REGIMENTS</b></span>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><b>Infantry</b></span><br>
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><b>Armor</b></span><br>
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><b>Aviation</b></span><br>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-padding-16">
+  <div class="w3-third w3-section regiment-padding">
+    <p>If you want to become a part of a 9man Squad where your Squad Leader and Fire Team Leaders direct you towards victory, join the Infantry regiment! You'll find yourself advancing towards a city with supporting armor, manuevering around a ridge to flank the enemy or even sitting in a logistics truck with your squadmates hoping your driver doesn't somehow get you all killed again. Every game is sure to consist of plenty of running, shooting and friendly banter in comms.</p>
+  </div>
+  <div class="w3-third w3-section regiment-padding">
+    <p>If rifles and RPGs aren't big enough toys for you, join the Armor regiment! Load up into a giant killing-machine where proper coordination between driver and gunner will ultimately decide your fate. The Armor regiment is responsible for protecting the Infantry and Aviation squads - don't let that enemy vehicle mow down your Infantry.. that's your job! Establish dominance over the enemy team and ultimately lead your team to victory.</p>
+  </div>
+  <div class="w3-third w3-section regiment-padding">
+    <p>If you're a pilot and want to earn your wings (and out rank the majority of clan members), join the Aviation regiment! Perhaps you're just tired of seeing all of those helicopters pilots flying towards the nearest tree like a moth to a flame. Not every pilot has the skills to quickly land with a helicopter full of logistics supplies and infantry near the frontlines. Pilots in the Aviation regiments will become J-hook landing masters, as well as landing troops and providing critical supplies for the Infantry and Armor squads. </p>
+  </div>
+</div>
+
+
+<hr />
+<!-- Container (Where to Join) 
+<div class="w3-content w3-container w3-padding-64" id="discord">
+  <h2 class="w3-center"><u>WHERE TO JOIN</u></h2>
+  <p class="w3-center"><em>Click the link or the Discord logo below! <br> <a href="https://discord.gg/Pan4yK959F">https://discord.gg/Pan4yK959F</a></em></p>
+</div>
+-->
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top  w3-black", "");
+    }
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <div class="w3-large w3-section">
+    <p>Find us here: 
+    <a href="https://www.paypal.com/pools/c/8wQQHzXwod"><i class="fa fa-paypal w3-hover-opacity"></i></a>
+    <a href="https://www.patreon.com/1ID/posts"><i class="fa fa-dollar w3-hover-opacity"></i></a>
+    <a href="https://discord.gg/mNfRdMBsmS"><i class="fa fa-microphone w3-hover-opacity"></i></a>
+  </p>
+  </div>
+</footer>
+</body>
+</html>
